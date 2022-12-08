@@ -10,7 +10,7 @@ After downloading and extracting the dataset, the file structure should look lik
     
     DAGM    
     ├── Class1
-    │   ├── Test
+     ├── Test
     │   └── Train
     ├── Class2
     │   ├── Test
