@@ -146,8 +146,10 @@ train_single()
 
     LOG_REDIRECT=$RESULTS_PATH/$DATASET/$RUN_NAME/training_log.txt
 
-    mkdir -p $RESULTS_PATH/$DATASET/$RUN_NAME/ && python -u train_net.py --GPU=$GPU $RUN_ARGS | /usr/bin/tee $LOG_REDIRECT
 
+    QWER="python -u train_net.py --GPU=$GPU $RUN_ARGS"
+    echo $QWER
+    mkdir -p $RESULTS_PATH/$DATASET/$RUN_NAME/ && python -u train_net.py --GPU=$GPU $RUN_ARGS | /usr/bin/tee $LOG_REDIRECT
 
 }
 
